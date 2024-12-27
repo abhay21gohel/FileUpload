@@ -7,7 +7,7 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://file-upload-six-sigma.vercel.app",
     credentials: true,
   })
 );
@@ -53,7 +53,6 @@ app.post("/upload", upload.single("photo"), (req, res) => {
     filePath: fileUrl, // Return the file URL
   });
 });
-
 
 // Static folder for serving uploaded files
 app.use("/uploads", express.static("uploads"));

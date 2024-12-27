@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000", // Your backend URL
+  baseURL: "https://file-upload-pv14.vercel.app", // Your backend URL
   withCredentials: true, // Include cookies if needed
 });
 
